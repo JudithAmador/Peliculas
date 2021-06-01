@@ -45,4 +45,43 @@
 </main>
  
 <!--/CAROUSEL-->
+<!--COMIENZO DE CONTENIDO-->
+<section class="contenedor">
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col text-uppercase"> 
+              <h4 style="color: white;">Inicio</h4> </small>
+          </div>
+      </div>
+
+      <div class="cont row pt-4"> 
+        
+        @foreach ($dats as $dat)
+      
+        <div class="col-12 col-md-6 col-lg-3  mb-4">
+          <div class="card" style="width:300px; position:relative; overflow:hidden;">
+              <img src="{{asset('img/'.$dat->Urlimagen)}}" class="card-img-top" alt="..." style="height: 300px; ">
+              <div class="capa" style="padding:0px;">
+                <h3>¡{{$dat->Titulo}}!</h3>
+                <p>{{$dat->Descripcion}}</p>
+               <p>Actores: {{$dat->Actores}}</p>
+                <p>Genero: {{$dat->Genero}}</p>
+                <a href="{{url('/Play/'.$dat->id.'/editReproductor')}}" type="button" class="btn btn-outline-success">PLAY</a>
+                
+            </div>
+              <div class="card-body text-center" style="padding:0px;">
+                <p class="card-title">{{$dat->Titulo}}</p>
+              </div>
+            </div>
+      </div>
+     @endforeach
+      
+        
+       
+      </div>
+  </div>
+  {{ $dats->links('pagination::bootstrap-4') }}
+</section>
+
+<!--FIN DE CONTENIDO-->
 @endsection

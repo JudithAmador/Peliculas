@@ -1,5 +1,5 @@
 <?php
-
+use App\Http\Controllers\Admin\FileController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,6 +11,16 @@
 |
 */
 
-Route::get('/', function () {
-    return view('inicio');
-});
+Route::get('/', 'Admin\FileController@inicio');
+/*Route::get('buscar/{$tit}/Buscar', 'Admin\FileController@Buscar');*/
+Route::get('Play/{id}/editReproductor', 'Admin\FileController@editReproductor');
+Auth::routes();
+
+/*Route::get('/admin', 'Admin\HomeController@index')->name('admin.home');
+
+Route::get('/admin/nuevo','Admin\FileController@create')->name('admin.crear');*/
+
+//acceder a todas las vistas
+Route::resource('admin', Admin\FileController::class);
+
+
