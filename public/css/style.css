@@ -1,5 +1,6 @@
 html, body{
     overflow-x: hidden;
+    background-color: black;
     }
 
 #footer
@@ -49,12 +50,20 @@ color: white;
     width: 90%;
     margin: auto;
     margin-top: 20px;
+
 }
 .contenedor
 {
-    height: 900px;
+
     background-color: black;
-    overflow: hidden;
+   
+}
+.container-fluid
+{
+    margin: auto;
+}
+.fa:hover{
+    color: yellow;
 }
 
 

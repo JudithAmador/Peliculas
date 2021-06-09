@@ -5,7 +5,7 @@
              <div class="col-12 col-lg">
                 <div class="row">
                     <div class="col-12 col-lg-12 col-md-12">
-                        <h5>Algun Nombre</h5>
+                        <h5>AnnMovies</h5>
                     </div>
                 </div>
              </div>   
@@ -29,7 +29,7 @@
         <div class="container">
                <div class="row">
                     <div class="col-lg col-12">
-                           <p> @2021 Algun Nombre, Todos los derechos reserados</p> 
+                           <p> @2021 AnnMovies, Todos los derechos reserados</p> 
                     </div>
                    
                </div> 

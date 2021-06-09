@@ -11,9 +11,14 @@ use App\Http\Controllers\Admin\FileController;
 |
 */
 
-Route::get('/', 'Admin\FileController@inicio');
-/*Route::get('buscar/{$tit}/Buscar', 'Admin\FileController@Buscar');*/
-Route::get('Play/{id}/editReproductor', 'Admin\FileController@editReproductor');
+Route::get('/', 'usuario\FileControllerUs@inicio');
+Route::get('buscar/{pelicula}', 'usuario\FileControllerUs@BuscarPeliculas')->name('buscar.pelicula');
+Route::get('Consultar/{serie}', 'usuario\FileControllerUs@ConsultarSerie')->name('consultar.serie');
+Route::get('ver/{Romace}', 'usuario\FileControllerUs@ConsultarRomance')->name('consultar.romance');
+Route::get('visualiza/{Accion}', 'usuario\FileControllerUs@ConsultarAccion')->name('consultar.accion');
+Route::get('ir/{Drama}', 'usuario\FileControllerUs@ConsultarDrama')->name('consultar.drama');
+//Route::get('buscar/{tit}', 'usuario\FileControllerUs@BuscarPeliculas')->name('buscar.titl');
+Route::get('Play/{id}/editReproductor', 'usuario\FileControllerUs@editReproductor');
 Auth::routes();
 
 /*Route::get('/admin', 'Admin\HomeController@index')->name('admin.home');

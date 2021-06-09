@@ -8,6 +8,7 @@
                 <div class="panel-heading ">
                     
                     <a href="{{url('/admin/create')}}" class="btn btn-success">Registrar nuevo contenido</a>
+                    
                 </div>
                 
             </div>
@@ -21,9 +22,9 @@
                 </div>
                  
                 </div>
-                <div class="row">
-                        <div class="col-12 col-md-offset" >
-                            <table class="table">
+           
+                      
+                            <table class="table table-bordered">
                                <thead class="encabeado">
                                 <th>Codigo</th>
                                 <th>Titulo</th>
@@ -36,6 +37,7 @@
                                       
                             </thead> 
                             <tbody class="cuerpo">
+                            </tbody>  
                              @foreach ($dats as $dat)
                                 <tr>
                                     <td>{{$dat->id}}</td>
@@ -45,20 +47,19 @@
                                     <td>{{$dat->Descripcion}}</td>
                                     <td>{{$dat->Urlimagen}}</td>
                                     <td>{{$dat->UrlPelicula}}</td>
-                                    <td>@include('admin.eliminar', ['$dat'=>$dat])
-                                        <a href="{{url('/admin/'.$dat->id.'/edit')}}" class="btn btn-primary">Editar</button>
-                                        
+                                    <td class="cont">@include('admin.eliminar', ['$dat'=>$dat])
+                                       
                                         </td>
                                             
                                 </tr>
                             @endforeach
                             
-                            </tbody>   
+                          
                             </table> 
 
-                        </div>
+                        
 
-                </div>
+             
       
     </div>
 

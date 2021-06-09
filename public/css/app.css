@@ -30,15 +30,22 @@
     color: white;
     text-align: center;
 }
+.table
+{
+    background-color: white;
+}
 .cuerpo td, .encabeado th
 {
-    border: 2px solid black;
+    border: 2px solid gray;
+  
 }
+
 body
 {
-    background-color: #F8C4EF47;
+    background-color: black;
+    color: black;
 }
-.panel-heading
+.cont
 {
-    
-}
+margin-left: -3%;
+} 

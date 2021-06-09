@@ -1,28 +1,33 @@
-<div class="container">
+<div class="container"  style="color: white; ">
     <div class="row">
         <div class="col text-center">
-            <small class="text-uppercase">
-               Registra nuevo contenido
-            </small>
-            <h2>Peliculas</h2>
+            
+            <h2>Registra nuevo contenido</h2>
         </div>
     </div>
     <div class="form-group "> 
             <input type="text" class="form-control" name="titulo"  placeholder="TITULO">
     </div>
     
-    <div class="form-group"> 
-        <input type="text" class="form-control" name="genero" placeholder="GENERO">
-    </div>
+    
    
     <div class="form-group"> 
         <input type="text" class="form-control" name="actores" placeholder="ACTORES">
     </div>
 
-
+    <div class="form-group">
+        <label for="exampleFormControlSelect1">Selecciona categoria</label>
+        <select class="form-control" id="exampleFormControlSelect1" name="genero">
+          <option>Pelicula</option>
+          <option>Serie</option>
+          <option>Romance</option>
+          <option>Accion</option>
+          <option>Drama</option>
+        </select>
+      </div>
     
    
-    <div class="form-group"> 
+    <div class="form-group" > 
       
         <input type="text" class="form-control" name="descripcion" placeholder="Agregar descripción">
     </div>
@@ -34,7 +39,7 @@
     <div class="form-group"> 
         <input type="text" class="form-control" placeholder="Enlace"  name="enlace">
     </div>
-  
+    
 
     <button type="submit" class="btn btn-primary">
         Guardar

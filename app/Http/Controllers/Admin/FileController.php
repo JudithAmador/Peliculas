@@ -27,15 +27,6 @@ class FileController extends Controller
         
        
     }
-
-    public function inicio()
-    {
-      
-        $dats= File::paginate(12);
-        return view('inicio', ['dats'=>$dats]);
-        
-       
-    }
    /* public function Buscar(Request $request)
     {
       $titl= $request->get('search');
@@ -45,13 +36,7 @@ class FileController extends Controller
        
     }*/
 
-    public function editReproductor($id)
-    {
-        $dat= File::find($id);
-
-        return view('Reproductor', compact('dat'));
-    }
-
+    
     /**
      * Show the form for creating a new resource.
      *
@@ -70,6 +55,8 @@ class FileController extends Controller
      */
     public function store(Request $request)
     {
+       
+
         //FILE ES EL MODELO
         $f= new File();
         $f->Titulo= $request->titulo;
@@ -86,10 +73,9 @@ class FileController extends Controller
         $f->UrlPelicula=$request->enlace;
         if($f->save())
         {
-            return redirect("/admin");
+            return redirect('admin');
         }
-       
-       
+        
      /* $datos = request()->except('_token');
       File::insert($datos);
       return response()->json($datos);*/

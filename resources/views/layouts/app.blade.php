@@ -29,7 +29,7 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
+                        AnnMovies
                     </a>
                 </div>
 
@@ -70,7 +70,7 @@
                 </div>
             </div>
         </nav>
-
+        
         @yield('content')
     </div>
 
