@@ -49,3 +49,8 @@ body
 {
 margin-left: -3%;
 } 
+.panel
+{
+    background-color: #310841;
+    color: white;
+}

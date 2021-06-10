@@ -31,7 +31,7 @@ class FileControllerUs extends Controller
     public function BuscarPeliculas($titl)
     {
         $Filtro=File::where('Genero', 'LIKE', "%$titl%")->get();
-       
+        
         return view('Peliculas', compact('Filtro'));
     }
 

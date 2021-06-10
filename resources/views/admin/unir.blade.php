@@ -4,6 +4,14 @@
             
             <h2>Registra nuevo contenido</h2>
         </div>
+        @if ($errors->any())
+        @foreach ($errors->all() as $error)
+        <div class="alert alert-danger">
+              <p>{{$error}}</p>  
+        </div>
+        @endforeach
+            
+        @endif
     </div>
     <div class="form-group "> 
             <input type="text" class="form-control" name="titulo"  placeholder="TITULO">

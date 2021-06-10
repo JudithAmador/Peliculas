@@ -63,7 +63,7 @@
           <div class="card" style="width:300px; position:relative; overflow:hidden;">
               <img src="{{asset('img/'.$dat->Urlimagen)}}" class="card-img-top" alt="..." style="height: 300px; ">
               <div class="d-p-4 capa" style="padding:0px;">
-                <h3 class="d-none d-md-block">¡{{$dat->Titulo}}!</h3>
+                <h3 class="d-none d-md-block">{{$dat->Titulo}}</h3>
                 <p class="d-none d-md-block">{{$dat->Descripcion}}</p>
                <p class="d-none d-md-block">Actores: {{$dat->Actores}}</p>
                 <p class="d-none d-md-block">Genero: {{$dat->Genero}}</p>
@@ -77,12 +77,84 @@
       </div>
      @endforeach
       
-        
+    </section>
        
       </div>
   </div>
+  <div class="container-fluid content">
+    <h5 style="color:white;">Recomendaciones</h5>
+    <div class="row">
+          <div class="col-12 col-md-6 col-lg-3  mb-4">
+            <div class="card fondo" style="width:260px; position:relative; overflow:hidden;">
+                <img src="peliculas/d.jpg" class="card-img-top" alt="..." style="height: 290px; ">
+                <div class="d-p-4 capa" style="padding:0px;">
+                  <h3 class="d-none d-md-block">Disomnia</h3>
+                  <p class="d-none d-md-block">Tras un suceso global repentino que acaba con todos los dispositivos electrónicos</p>
+                 <p class="d-none d-md-block">Actores: Alex House</p>
+                  <p class="d-none d-md-block">Genero: Acción</p>
+                  <a href="" type="button" class="btn btn-outline-success">PLAY</a>
+                  
+              </div>
+                <div class="card-body text-center" style="padding:0px;">
+                  <p class="card-title">Disomnia</p>
+                </div>
+              </div>
+        </div>
 
-</section>
+        <div class="col-12 col-md-6 col-lg-3  mb-4">
+          <div class="card fondo" style="width:260px; position:relative; overflow:hidden;">
+              <img src="peliculas/cop.jpg" class="card-img-top" alt="..." style="height: 290px; ">
+              <div class="d-p-4 capa" style="padding:0px;">
+                <h3 class="d-none d-md-block">COPS</h3>
+                <p class="d-none d-md-block">Christoph entrena con la unidad especial de la policía vienesa WEGA, una vida diaria de testosterona.</p>
+               <p class="d-none d-md-block">Actores: Anna Suk</p>
+                <p class="d-none d-md-block">Genero: Drama</p>
+                <a href="" type="button" class="btn btn-outline-success">PLAY</a>
+                
+            </div>
+              <div class="card-body text-center" style="padding:0px;">
+                <p class="card-title">COPS</p>
+              </div>
+            </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3  mb-4">
+        <div class="card fondo" style="width:260px; position:relative; overflow:hidden;">
+            <img src="peliculas/fat.jpg" class="card-img-top" alt="..." style="height: 290px; ">
+            <div class="d-p-4 capa" style="padding:0px;">
+              <h3 class="d-none d-md-block">Matar a santa</h3>
+              <p class="d-none d-md-block">Santa Claus debe enfrentarse a un sicario enviado por un niño decepcionado.</p>
+             <p class="d-none d-md-block">Actores: Alexa Devine</p>
+              <p class="d-none d-md-block">Genero: Acción</p>
+              <a href="" type="button" class="btn btn-outline-success">PLAY</a>
+              
+          </div>
+            <div class="card-body text-center" style="padding:0px;">
+              <p class="card-title">Matar a santa</p>
+            </div>
+          </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-3  mb-4">
+      <div class="card fondo" style="width:260px; position:relative; overflow:hidden;">
+          <img src="peliculas/h.jpg" class="card-img-top" alt="..." style="height: 290px; ">
+          <div class="d-p-4 capa" style="padding:0px;">
+            <h3 class="d-none d-md-block">Holly start</h3>
+            <p class="d-none d-md-block">La joven Sloan regresa a casa por Navidad y se verá envuelta en una misteriosa «caza del tesoro» junto a su mejor amigo</p>
+           <p class="d-none d-md-block">Actores: Brian Muller</p>
+            <p class="d-none d-md-block">Genero: Comedia</p>
+            <a href="" type="button" class="btn btn-outline-success">PLAY</a>
+            
+        </div>
+          <div class="card-body text-center" style="padding:0px;">
+            <p class="card-title">Holly start</p>
+          </div>
+        </div>
+  </div>
+
+
+      </div> 
+
+  </div>
+
 
 <!--FIN DE CONTENIDO-->
 @endsection

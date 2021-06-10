@@ -25,6 +25,10 @@ color: white;
     color: white;
    
 }
+.fondo
+{
+    background-color: thistle;
+}
 .card .capa
 {
     position: absolute;
@@ -36,6 +40,10 @@ color: white;
         opacity: 0;
         visibility: hidden;
        text-align: center;
+}
+.content
+{
+    background-color: #2A0A29;
 }
 .card .capa h3
 {

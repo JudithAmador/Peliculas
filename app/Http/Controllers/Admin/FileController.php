@@ -56,7 +56,15 @@ class FileController extends Controller
     public function store(Request $request)
     {
        
+            $request->validate([
+                'titulo'=>'required',
+                'genero'=>'required',
+                'actores'=>'required',
+                'descripcion'=>'required',
+                'foto'=>'required',
+                'enlace'=>'required'
 
+            ]);
         //FILE ES EL MODELO
         $f= new File();
         $f->Titulo= $request->titulo;
